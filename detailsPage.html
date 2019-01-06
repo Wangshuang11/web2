@@ -84,7 +84,7 @@
 	    <!-- 页面中间部分-->
 	    <div id="scannerMiddle" class="clearfix">
 	    	<div id="scannerLeft">
-	    		<img src="img/pp0.jpeg" width="408" height="408"/>
+	    		<img src="img/pp0.jpeg" width="408" height="408" id="www" />
 	    		<div id="slider"></div><!-- 滑块 -->
 	    	</div>
 	    	<div id="img2"><!-- 右边出来的那一块 -->
@@ -227,20 +227,18 @@
 	<script type="text/javascript">
         //1、商品缩略图划入上面大图随之变化
         var iMg2 = document.getElementById("img2");
+        var www = document.getElementById("www");
+        var Bimg1 = document.getElementById("Bimg");
         var smallOfImg1= document.getElementById("smallOfImg1");
 	    var smallOfImg2= document.getElementById("smallOfImg2");
-	    var str1=("<img src='img/pp0.jpeg' width='408' height='408'><div id='slider'></div>");
-	    var str2=("<img src='img/pp1.jpeg' width='408' height='408'><div id='slider'></div>");
-	    var str3=("<img src='img/pp0.jpeg'  id='Bimg'  width='800' height='800'/>");
-	    var str4=("<img src='img/pp1.jpeg'  id='Bimg'  width='800' height='800'/>");
 	    var scannerLeft= document.getElementById("scannerLeft");
         smallOfImg1.onmouseover=function(){
-        	scannerLeft.innerHTML=str1;
-        	iMg2.innerHTML=str3;
+        	www.src='img/pp0.jpeg';
+        	Bimg1.src='img/pp0.jpeg';
         }
         smallOfImg2.onmouseover=function(){
-        	scannerLeft.innerHTML=str2;
-        	iMg2.innerHTML=str4;
+        	www.src='img/pp1.jpeg';
+        	Bimg1.src='img/pp1.jpeg';
         }
 
 

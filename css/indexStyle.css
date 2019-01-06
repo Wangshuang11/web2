@@ -550,8 +550,9 @@
         #block1{
             width: 130px;
             position: fixed;
-            top:120px;
+            top:90px;
             right: -87px;
+            z-index: 3;
         }
         #block1 img{
             display: block;
@@ -560,7 +561,7 @@
             width: 130px;
             height: 140px;
             position: fixed;
-            top:230px;
+            top:200px;
             right: -87px;
             background-color: #ff9260;
         }
@@ -585,7 +586,7 @@
         }
         #block4{
             position: fixed;
-            top:520px;
+            top:490px;
             right: -87px;
             width: 130px;
             background-color: #ff4d04;
@@ -595,7 +596,7 @@
             height: 140px;
             background-color: #ff9260;
             position: fixed;
-            top:375px;
+            top:345px;
             right: -87px;
         }
         #block3 #serwei{
